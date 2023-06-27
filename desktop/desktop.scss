@@ -5,10 +5,12 @@
 }
 
 @if $show_topic_author_column_last == "true" {
- .topic-list .posters, 
- .latest-topic-list-item .topic-poster {
+  .topic-list .posters,
+  .latest-topic-list-item .topic-poster,
+  .topic-list .topic-list-data:last-of-type {
     width: 70px;
     text-align: right;
+    padding-left: 40px;
   }
 }
 
