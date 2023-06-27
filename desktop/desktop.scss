@@ -1,6 +1,17 @@
-.topic-list .posters {
-  width: 70px;
+@if $show_topic_author_column_last == "false" {
+  .topic-list .posters {
+    width: 70px;
+  }
 }
+
+@if $show_topic_author_column_last == "true" {
+ .topic-list .posters, 
+ .latest-topic-list-item .topic-poster {
+    width: 70px;
+    text-align: right;
+  }
+}
+
 
 #suggested-topics .topic-list {
   .topic-list-header {
@@ -15,18 +26,4 @@
   color: var(--primary-medium);
 }
 
-@if $show_topic_author_column_last == "true" {
-.topic-list .topic-list-data:last-of-type  {
-    text-align: right;
-//    padding-right: 8px;
-    padding-left: 40px;
-  }
-}
 
-//@if $show_topic_author_column_first == "true" {
-//.topic-list .topic-list-data:first-of-type  {
-//   text-align: left;
-//    padding-left: 8px;
-//    padding-right: 20px;
-//  }
-//}
