@@ -1,0 +1,18 @@
+show_author_username:
+  type: bool
+  default: false
+  description:
+    en: "Show author usernames instead profile avatars."
+
+show_topic_author_column_first:
+  type: bool
+  default: false
+  description: 
+    en: "Show topic authors in the first column."
+    
+show_topic_author_column_last:
+  type: bool
+  default: false
+  description: 
+    en: "Show topic authors in the last column."
+    
