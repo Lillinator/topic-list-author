@@ -2,17 +2,17 @@ show_author_username:
   type: bool
   default: false
   description:
-    en: "Show author usernames instead profile avatars."
+    en: "Show author usernames instead profile avatars in topic list filter pages."
 
 show_topic_author_column_first:
   type: bool
   default: false
   description: 
-    en: "Show topic authors in the first column."
+    en: "Show topic authors in the first column in topic list filter pages."
     
 show_topic_author_column_last:
   type: bool
   default: false
   description: 
-    en: "Show topic authors in the last column."
+    en: "Show topic authors in the last column in topic list filter pages."
     
