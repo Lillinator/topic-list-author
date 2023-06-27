@@ -374,12 +374,7 @@
 <script type="text/x-handlebars" data-template-name="components/latest-topic-list-item">
   
 <PluginOutlet @name="above-latest-topic-list-item" @connectorTagName="div" />
-<div class="topic-poster">
-  <UserLink @user={{this.topic.creator}}>
-    {{avatar this.topic.creator imageSize="large"}}
-  </UserLink>
-  <UserAvatarFlair @user={{this.topic.creator}} />
-</div>
+
 <div class="main-link">
   <div class="top-row">
     {{raw "topic-status" topic=this.topic}}
@@ -413,5 +408,11 @@
       title={{this.topic.bumpedAtTitle}}
     >{{format-date this.topic.bumpedAt format="tiny" noTitle="true"}}</a>
   </div>
+ </div>
+ <div class="topic-poster">
+  <UserLink @user={{this.topic.creator}}>
+    {{avatar this.topic.creator imageSize="large"}}
+  </UserLink>
+  <UserAvatarFlair @user={{this.topic.creator}} />
  </div>  
 </script>
