@@ -20,4 +20,4 @@ show_topic_author_column_last_on_categories_page:
   type: bool
   default: false
   description: 
-    en: "Show topic authors in the last column on the desktop view category homepage. Leave disabled for default first column."
+    en: "Show topic authors in the last column on the desktop view category homepage. Leave disabled for default topic list first column."
