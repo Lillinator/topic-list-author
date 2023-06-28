@@ -97,6 +97,7 @@
       </div>
 {{/if}}
 
+
   <div class='right'>
 
     {{~raw-plugin-outlet name="topic-list-before-link"}}
@@ -129,7 +130,6 @@
         {{~/unless}}
         {{~discourse-tags topic mode="list"}}
       </span>
-
         {{#if (theme-setting 'show_author_username')}}
           <div class="pull-right with-username">
             <a href="{{topic.creator.path}}" data-user-card="{{topic.creator.username}}">
