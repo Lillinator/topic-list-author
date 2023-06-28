@@ -1,3 +1,5 @@
+
+@if $show_topic_author_column_last == "false" {
 .topic-list .topic-list-data {
   .hidden-avatar {
     + .right {
@@ -23,4 +25,35 @@
       margin-bottom: 0.5em;
     }
   }
+ }
 }
+
+@if $show_topic_author_column_last == "true" {
+.topic-list .topic-list-data {
+  .hidden-avatar {
+    + .right {
+      margin-right: 0;
+    }
+  }
+  .main-link a.title {
+    padding: 0.5em 0;
+    + .pull-left.with-username {
+      margin: 0;
+    }
+  }
+  .pull-left {
+    &.with-username {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+  .topic-item-stats {
+    .category,
+    .discourse-tags {
+      margin-bottom: 0.5em;
+    }
+  }
+ }
+}
+
