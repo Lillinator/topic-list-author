@@ -14,10 +14,10 @@ show_topic_author_column_last:
   type: bool
   default: false
   description: 
-    en: "Show topic authors in the last column in all topic list pages. Above setting must be disabled. Leaving both disabled shows default columnn order."
+    en: "Show topic authors in the last column in all topic list pages. Above setting must be disabled. Leaving both disabled shows default column order."
 
 show_topic_author_column_last_on_categories_page:
   type: bool
   default: false
   description: 
-    en: "Show topic authors in the last column on the category homepage. Leave blank for default first columnn."
+    en: "Show topic authors in the last column on the category homepage. Leave blank for default first column."
