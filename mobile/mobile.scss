@@ -7,7 +7,7 @@
     }
   }
   .main-link a.title {
-    padding: 0.5em 0;
+    padding-right: 0.5em;
     + .pull-right.with-username {
       margin: 0;
     }
@@ -32,11 +32,11 @@
 .topic-list .topic-list-data {
   .hidden-avatar {
     + .right {
-      margin-right: 0;
+      margin-left: 8px;
     }
   }
   .main-link a.title {
-    padding: 0.5em 0;
+    padding-left: 0.5em;
     + .pull-left.with-username {
       margin: 0;
     }
