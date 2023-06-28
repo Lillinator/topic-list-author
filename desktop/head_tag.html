@@ -410,10 +410,14 @@
   </div>
  </div>  
  <div class="topic-poster">
-  <UserLink @user={{this.topic.creator}}>
-    {{avatar this.topic.creator imageSize="large"}}
-  </UserLink>
-  <UserAvatarFlair @user={{this.topic.creator}} />
+     {{#if (theme-setting 'show_author_username')}}
+        {{topic.creator.username}}
+        {{else}}
+       <UserLink @user={{this.topic.creator}}>
+       {{avatar this.topic.creator imageSize="large"}}
+       </UserLink>
+     <UserAvatarFlair @user={{this.topic.creator}} />
+    {{/if}}
  </div>
 
 {{else}}
