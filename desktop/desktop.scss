@@ -1,30 +1,30 @@
-@if $show_topic_author_column_last == "false" {
+@if $show_topic_author_column_last =="false" {
   .topic-list .posters {
     width: 70px;
   }
 }
 
-@if $show_topic_author_column_last_on_categories_page == "true" {
+@if $show_topic_author_column_last_on_categories_page =="true" {
   .latest-topic-list-item .topic-poster {
     width: 70px;
     text-align: right;
-//    padding-left: 30px;
+    //    padding-left: 30px;
   }
 }
 
-@if $show_topic_author_column_last == "true" {
+@if $show_topic_author_column_last =="true" {
   .topic-list .topic-list-data:last-of-type {
     width: 70px;
     text-align: right;
-//    padding-left: 30px;
+    //    padding-left: 30px;
   }
 }
-
 
 #suggested-topics .topic-list {
   .topic-list-header {
     display: none;
   }
+
   .author.topic-list-data {
     width: 70px;
   }
@@ -33,5 +33,3 @@
 .topic-list-item .author a {
   color: var(--primary-medium);
 }
-
-

@@ -1,59 +1,67 @@
+@if $show_topic_author_column_last =="false" {
+  .topic-list .topic-list-data {
+    .hidden-avatar {
+      +.right {
+        margin-left: 0;
+      }
+    }
 
-@if $show_topic_author_column_last == "false" {
-.topic-list .topic-list-data {
-  .hidden-avatar {
-    + .right {
-      margin-left: 0;
+    .main-link a.title {
+      padding-right: 0.5em;
+
+      +.pull-right.with-username {
+        margin: 0;
+      }
+    }
+
+    .pull-right {
+      &.with-username {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+    }
+
+    .topic-item-stats {
+
+      .category,
+      .discourse-tags {
+        margin-bottom: 0.5em;
+      }
     }
   }
-  .main-link a.title {
-    padding-right: 0.5em;
-    + .pull-right.with-username {
-      margin: 0;
-    }
-  }
-  .pull-right {
-    &.with-username {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-    }
-  }
-  .topic-item-stats {
-    .category,
-    .discourse-tags {
-      margin-bottom: 0.5em;
-    }
-  }
- }
 }
 
-@if $show_topic_author_column_last == "true" {
-.topic-list .topic-list-data {
-  .hidden-avatar {
-    + .right {
-      margin-left: 8px;
+@if $show_topic_author_column_last =="true" {
+  .topic-list .topic-list-data {
+    .hidden-avatar {
+      +.right {
+        margin-left: 8px;
+      }
     }
-  }
-  .main-link a.title {
-    padding-left: 0.5em;
-    + .pull-left.with-username {
-      margin: 0;
-    }
-  }
-  .pull-left {
-    &.with-username {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-    }
-  }
-  .topic-item-stats {
-    .category,
-    .discourse-tags {
-      margin-bottom: 0.5em;
-    }
-  }
- }
-}
 
+    .main-link a.title {
+      padding-left: 0.5em;
+
+      +.pull-left.with-username {
+        margin: 0;
+      }
+    }
+
+    .pull-left {
+      &.with-username {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+    }
+
+    .topic-item-stats {
+
+      .category,
+      .discourse-tags {
+        margin-bottom: 0.5em;
+      }
+    }
+  }
+}
