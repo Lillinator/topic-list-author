@@ -21,3 +21,9 @@ show_topic_author_column_last_on_categories_page:
   default: false
   description:
     en: "Show topic authors in the last column on the desktop view category homepage. Leave disabled for default first column."
+
+apply_to_these_categories_only:
+  type: string
+  default: ""
+  description: 
+    en: "Category slugs of categories this setting should only appy to. Leave blank to apply to all categories. Slugs are the lower case names found in the category URL."
