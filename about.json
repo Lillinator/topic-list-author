@@ -3,5 +3,6 @@
   "component": true,
   "about_url": "https://meta.discourse.org/t/topic-list-author/269910",
   "license_url": "https://github.com/Lillinator/topic-list-author/blob/main/LICENSE",
-  "theme_version": "1.0"
+  "authors": "@Lillinator",
+  "theme_version": "2.0"
 }
