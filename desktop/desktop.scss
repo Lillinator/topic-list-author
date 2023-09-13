@@ -33,3 +33,8 @@
 .topic-list-item .author a {
   color: var(--primary-medium);
 }
+
+.topic-list-item .author {
+    z-index: 1;
+    background-color: rgba(var(--primary-low-rgb), 0.85);
+}
