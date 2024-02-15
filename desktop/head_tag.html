@@ -34,7 +34,7 @@
       {{~raw "topic-status" topic=topic}}
       {{~topic-link topic class="raw-link raw-topic-link"}}
       {{~#if topic.featured_link}}
-        {{~topic-featured-link topic}}
+        &nbsp;{{~topic-featured-link topic}}
       {{~/if}}
       {{~raw-plugin-outlet name="topic-list-after-title"}}
       {{~raw "list/unread-indicator" includeUnreadIndicator=includeUnreadIndicator
@@ -116,7 +116,7 @@
       {{~raw "topic-status" topic=topic}}
       {{~topic-link topic class="raw-link raw-topic-link"}}
       {{~#if topic.featured_link}}
-        {{~topic-featured-link topic}}
+        &nbsp;{{~topic-featured-link topic}}
       {{~/if}}
       {{~raw-plugin-outlet name="topic-list-after-title"}}
       {{~raw "list/unread-indicator" includeUnreadIndicator=includeUnreadIndicator
@@ -207,7 +207,7 @@
       {{~raw "topic-status" topic=topic}}
       {{~topic-link topic class="raw-link raw-topic-link"}}
       {{~#if topic.featured_link}}
-        {{~topic-featured-link topic}}
+        &nbsp;{{~topic-featured-link topic}}
       {{~/if}}
       {{~raw-plugin-outlet name="topic-list-after-title"}}
       {{~raw "list/unread-indicator" includeUnreadIndicator=includeUnreadIndicator
@@ -383,9 +383,9 @@
       {{raw "topic-status" topic=this.topic}}
       {{topic-link this.topic}}
       {{~#if this.topic.featured_link}}
-        {{topic-featured-link this.topic}}
-      {{/if}}
-      <TopicPostBadges
+      &nbsp;{{topic-featured-link this.topic}}
+    {{/if}}{{! intentionally inline 
+    to avoid whitespace}}<TopicPostBadge
         @unreadPosts={{this.topic.unread_posts}}
         @unseen={{this.topic.unseen}}
         @url={{this.topic.lastUnreadUrl}}
@@ -435,9 +435,9 @@
       {{raw "topic-status" topic=this.topic}}
       {{topic-link this.topic}}
       {{~#if this.topic.featured_link}}
-        {{topic-featured-link this.topic}}
-      {{/if}}
-      <TopicPostBadges
+      &nbsp;{{topic-featured-link this.topic}}
+    {{/if}}{{! intentionally inline 
+    to avoid whitespace}}<TopicPostBadge
         @unreadPosts={{this.topic.unread_posts}}
         @unseen={{this.topic.unseen}}
         @url={{this.topic.lastUnreadUrl}}
