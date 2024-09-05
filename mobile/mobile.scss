@@ -30,6 +30,13 @@
       }
     }
   }
+  .more-topics__container .more-topics__list .topic-list-body .topic-list-item .pull-left {
+    display: none;
+  }
+
+  .more-topics__container .more-topics__list .topic-list-body .topic-item-metadata.right {
+    margin-left: 0;
+  }
 }
 
 @if $show_topic_author_column_last =="true" {
@@ -64,12 +71,11 @@
       }
     }
   }
-}
-
-.more-topics__container .more-topics__list .topic-list-body .topic-list-item .pull-left {
+  .more-topics__container .more-topics__list .topic-list-body .topic-list-item .pull-right {
     display: none;
-}
+  }
 
-.more-topics__container .more-topics__list .topic-list-body .topic-item-metadata.right {
+  .more-topics__container .more-topics__list .topic-list-body .topic-item-metadata.left {
     margin-left: 0;
+  }
 }
