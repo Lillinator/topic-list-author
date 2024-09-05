@@ -19,15 +19,8 @@
     //    padding-left: 30px;
   }
 }
-
-#suggested-topics .topic-list {
-  .topic-list-header {
+.more-topics__container .more-topics__list .topic-list-body .topic-list-item .author {
     display: none;
-  }
-
-  .author.topic-list-data {
-    width: 70px;
-  }
 }
 
 .topic-list-item .author a {
