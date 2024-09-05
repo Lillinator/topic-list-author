@@ -71,7 +71,11 @@
       }
     }
   }
-  .more-topics__container .more-topics__list .topic-list-body .topic-list-item .pull-right {
+  .pull-right {
+    float: right;
+    padding-left: 8px;
+  }
+    .more-topics__container .more-topics__list .topic-list-body .topic-list-item .pull-right {
     display: none;
   }
 
