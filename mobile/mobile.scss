@@ -31,11 +31,11 @@
     }
   }
   .more-topics__container .more-topics__list .topic-list-body .topic-list-item .pull-left {
-    display: none;
+    display: none !important;
   }
 
   .more-topics__container .more-topics__list .topic-list-body .topic-item-metadata.right {
-    margin-left: 0;
+    margin-left: 0 !important;
   }
 }
 
@@ -76,10 +76,10 @@
     padding-left: 8px;
   }
     .more-topics__container .more-topics__list .topic-list-body .topic-list-item .pull-right {
-    display: none;
+    display: none !important;
   }
 
   .more-topics__container .more-topics__list .topic-list-body .topic-item-metadata.left {
-    margin-left: 0;
+    margin-left: 0 !important;
   }
 }
