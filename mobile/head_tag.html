@@ -2,7 +2,7 @@
   type="text/x-handlebars"
   data-template-name="mobile/list/topic-list-item.raw"
 >
-  {{#if (theme-setting 'show_topic_author_column_last')}}
+ {{#if (theme-setting 'show_topic_author_column_last')}}
 
     <td class="topic-list-data">
     {{~raw-plugin-outlet name="topic-list-before-columns"}}
@@ -153,4 +153,5 @@
       </div>
     </td>
   {{/if}}
+
 </script>
