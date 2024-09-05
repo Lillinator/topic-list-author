@@ -4,14 +4,6 @@
   }
 }
 
-@if $show_topic_author_column_last_on_categories_page =="true" {
-  .latest-topic-list-item .topic-poster {
-    width: 70px;
-    text-align: right;
-    //    padding-left: 30px;
-  }
-}
-
 @if $show_topic_author_column_last =="true" {
   .topic-list .topic-list-data:last-of-type {
     width: 70px;
