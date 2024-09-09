@@ -15,6 +15,9 @@
     display: none !important;
 }
 
+.more-topics__container .more-topics__list .topic-list .posters {
+    display: none;
+}
 .topic-list-item .author a {
   color: var(--primary-medium);
 }
