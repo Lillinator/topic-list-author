@@ -1,85 +1,58 @@
-@if $show_topic_author_column_last =="false" {
+@if $show_topic_author_column_last == 'true' {
   .topic-list .topic-list-data {
-    .hidden-avatar {
-      +.right {
-        margin-left: 0;
-      }
-    }
-
-    .main-link a.title {
-      padding-right: 0.5em;
-
-      +.pull-right.with-username {
-        margin: 0;
-      }
-    }
-
-    .pull-right {
-      &.with-username {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-      }
-    }
-
-    .topic-item-stats {
-
-      .category,
-      .discourse-tags {
-        margin-bottom: 0.5em;
-      }
-    }
-  }
-  .more-topics__container .more-topics__list .topic-list-body .topic-list-item .pull-left {
-    display: none !important;
-  }
-
-  .more-topics__container .more-topics__list .topic-list-body .topic-item-metadata.right {
-    margin-left: 0 !important;
-  }
-}
-
-@if $show_topic_author_column_last =="true" {
-  .topic-list .topic-list-data {
-    .hidden-avatar {
-      +.right {
-        margin-left: 8px;
-      }
-    }
-
-    .main-link a.title {
-      padding-left: 0.2em;
-
-      +.pull-left.with-username {
-        margin: 0;
-      }
+    .right {
+      margin-left: 0;
     }
 
     .pull-left {
-      &.with-username {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-      }
+      display: none;
     }
 
-    .topic-item-stats {
-
-      .category,
-      .discourse-tags {
-        margin-bottom: 0.5em;
-      }
+    &.custom-author-column {
+      vertical-align: top;
+      padding-left: 1em;
     }
   }
-  .pull-right {
-    float: right;
-    padding-left: 8px;
-  }
-    .more-topics__container .more-topics__list .topic-list-body .topic-list-item .pull-right {
-    display: none !important;
-  }
+}
 
-  .more-topics__container .more-topics__list .topic-list-body .topic-item-metadata.left {
-    margin-left: 0 !important;
+@if $show_topic_author_column_first == 'true' {
+  .topic-list {
+    .topic-list-item {
+      .pull-left {
+        display: none;
+      }
+    }
+    .topic-list-item-metadata {
+      margin-left: 0;
+    }
+
+    .custom-author-column {
+      vertical-align: top;
+      padding-top: 0.65em;
+    }
+
+    .topic-item-metadata {
+      position: relative;
+    }
+
+    .main-link {
+      margin-right: 2em;
+    }
+
+    .pull-right {
+      float: none;
+      position: absolute;
+      top: 0.45em;
+      right: 0;
+    }
+
+    .posts-map {
+      color: var(--primary-medium);
+    }
+
+    .right {
+      margin-left: 0.5em;
+      padding: 0.5em 0;
+    }
   }
 }

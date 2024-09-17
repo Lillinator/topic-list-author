@@ -1,0 +1,3 @@
+{{#if (theme-setting 'show_topic_author_column_last')}}
+  {{raw "author-column-content" topic=context.topic}}
+{{/if}}

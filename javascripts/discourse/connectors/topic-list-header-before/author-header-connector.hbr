@@ -1,0 +1,3 @@
+{{#if (theme-setting 'show_topic_author_column_first')}}
+  {{raw "author-column-header"}}
+{{/if}}
