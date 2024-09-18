@@ -1,3 +1,1 @@
-{{#if (theme-setting 'show_topic_author_column_last')}}
-  {{raw "author-column-header"}}
-{{/if}}
+{{raw "author-column-header" setting=(theme-setting 'column_position') position="right"}}

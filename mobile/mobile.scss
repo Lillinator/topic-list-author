@@ -1,4 +1,4 @@
-@if $show_topic_author_column_last == "true" {
+@if $column_position == "right" {
   .topic-list .topic-list-data {
     .right {
       margin-left: 0;
@@ -15,7 +15,7 @@
   }
 }
 
-@if $show_topic_author_column_first == "true" {
+@if $column_position == "left" or $column_position == "center" {
   .topic-list {
     .topic-list-item {
       .pull-left {

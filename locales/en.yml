@@ -1,2 +1,5 @@
 en:
   author: "Author"
+  theme_metadata:
+    settings:
+      column_position: "Changes the position of the Author column. Note that center positioning does not work on mobile, and will fallback to left."
