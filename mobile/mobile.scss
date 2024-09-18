@@ -1,4 +1,4 @@
-@if $column_position == 'right' {
+@if $column_position == "right" {
   .topic-list .topic-list-data {
     .right {
       margin-left: 0;
@@ -15,7 +15,7 @@
   }
 }
 
-@if $column_position == 'left' or $column_position == 'center' {
+@if $column_position == "left" or $column_position == "center" {
   .topic-list {
     .topic-list-item {
       .pull-left {
