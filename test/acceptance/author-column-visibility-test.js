@@ -27,7 +27,6 @@ acceptance("Discourse Topic List Author", function (needs) {
     assert.dom(".custom-author-column").exists();
   });
 
-
   test("Author column is present on the left on mobile", async function (assert) {
     needs.mobileView();
     settings.column_position = "left";
