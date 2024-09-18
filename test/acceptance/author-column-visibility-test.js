@@ -11,16 +11,16 @@ acceptance("Discourse Topic List Author", function (needs) {
     assert.dom(".custom-author-column").exists();
   });
 
-  test("Author column is present in the center", async function (assert) {
-    settings.column_position = "center";
+  test("Author column is present on the right", async function (assert) {
+    settings.column_position = "right";
 
     await visit("/");
 
     assert.dom(".custom-author-column").exists();
   });
 
-  test("Author column is present on the right", async function (assert) {
-    settings.column_position = "right";
+  test("Author column is present in the center", async function (assert) {
+    settings.column_position = "center";
 
     await visit("/");
 
@@ -36,18 +36,18 @@ acceptance("Discourse Topic List Author", function (needs) {
     assert.dom(".custom-author-column").exists();
   });
 
-  test("Author column is present in the center on mobile", async function (assert) {
+  test("Author column is present on the right on mobile", async function (assert) {
     needs.mobileView();
-    settings.column_position = "center";
+    settings.column_position = "right";
 
     await visit("/");
 
     assert.dom(".custom-author-column").exists();
   });
 
-  test("Author column is present on the right on mobile", async function (assert) {
+  test("Author column is present in the center on mobile", async function (assert) {
     needs.mobileView();
-    settings.column_position = "right";
+    settings.column_position = "center";
 
     await visit("/");
 
