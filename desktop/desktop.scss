@@ -1,28 +1,27 @@
-@if $show_topic_author_column_last =="false" {
-  .topic-list .posters {
-    width: 70px;
-  }
-}
-
-@if $show_topic_author_column_last =="true" {
-  .topic-list .topic-list-data:last-of-type {
-    width: 70px;
-    text-align: right;
-    //    padding-left: 30px;
-  }
-}
-.more-topics__container .more-topics__list .topic-list-body .topic-list-item .author {
-    display: none !important;
-}
-
-.more-topics__container .more-topics__list .topic-list .posters {
+.topic-list {
+  th:not(.posts):not(.views):not(.activity):not(.author):not(.default):not(
+      .bulk-select
+    ) {
+    // looks a little silly, but the column I want to hide doesn't have a class
     display: none;
-}
-.topic-list-item .author a {
-  color: var(--primary-medium);
-}
+  }
 
-.topic-list-item .author {
-    z-index: 1 !important;
-//    background-color: rgba(var(--primary-low-rgb), 0.85);
+  .posters {
+    display: none;
+  }
+
+  // bulk select adjustments
+
+  button.bulk-select {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .topic-list-data.bulk-select {
+    text-align: center;
+  }
+
+  .posts {
+    width: auto;
+  }
 }
