@@ -1,0 +1,9 @@
+{
+  "name": "discourse-topic-list-author",
+  "repository": "https://github.com/Lillinator/topic-list-author",
+  "author": "Discourse",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-config-discourse": "latest"
+  }
+}

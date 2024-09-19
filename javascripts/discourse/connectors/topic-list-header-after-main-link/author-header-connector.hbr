@@ -1,0 +1,1 @@
+{{raw "author-column-header" setting=(theme-setting 'column_position') position="center"}}
