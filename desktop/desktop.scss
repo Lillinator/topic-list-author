@@ -25,3 +25,10 @@
     width: auto;
   }
 }
+
+.top-topic-list,
+.latest-topic-list {
+  .topic-poster:not(.custom-latest-poster) {
+    display: none;
+  }
+}
