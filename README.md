@@ -1,3 +1,3 @@
 # Discourse Topic List Author - depracated
 
-This theme component is no longer being maintained and has been made official and now resides here: https://github.com/discourse/discourse-topic-list-author
+This theme component is no longer being maintained. The latest version is now an official Discourse theme component and resides here: https://github.com/discourse/discourse-topic-list-author
